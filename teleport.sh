@@ -97,7 +97,7 @@ case $selected_choice in
     "Teleport to Projects") echo "\033[38;2;255;143;252m\033[1mTeleporting to Projects directory!"; cd ~/Documents/Projects;;
     "Teleport to Python") echo "\033[38;2;255;143;252m\033[1mTeleporting to Python directory!"; cd ~/Documents/Projects/Python ;;
     "Teleport to Algorithims") echo "\033[38;2;255;143;252m\033[1mTeleporting to Algorithims directory!"; cd ~/Documents/Projects/Algorithims ;;
-    "Teleport to Class Files") echo "\033[38;2;255;143;252m\033[1mTeleporting to your Class Files directory!"; cd ~/Documents/Projects/Random\ Class\ Files ;;
+    "Teleport to Class Files") echo "\033[38;2;255;143;252m\033[1mTeleporting to your Class Files directory!"; cd ~/Documents/Projects/Temp\ Class\ Files ;;
     "Teleport to Downloads") echo "\033[38;2;255;143;252m\033[1mTeleporting to your Downloads directory!"; cd ~/Downloads ;;
     "Teleport to Desktop") echo "\033[38;2;255;143;252m\033[1mTeleporting to Desktop directory!"; cd ~/Desktop ;;
 esac

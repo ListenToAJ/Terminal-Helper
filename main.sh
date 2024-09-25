@@ -31,6 +31,7 @@ function choose_from_menu() {
     echo "\033[38;2;6;88;140m                                   ––            –    vÓc ò=     †                       "
     echo "\033[38;2;24;78;129m                                                    I0                                  "
     script_dir=$(dirname ${(%):-%x})
+
     echo -n "$prompt\n"
     # measure the rows of the menu, needed for erasing those rows when moving
     # the selection

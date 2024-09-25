@@ -81,6 +81,7 @@ selections=(
 "Teleport to Class Files"
 "Teleport to Downloads"
 "Teleport to Desktop"
+"Exit!"
 # "Git repo setup"
 )
 

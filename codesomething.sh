@@ -79,6 +79,7 @@ selections=(
 "Start new Python project"
 "Create new algorithm"
 "Start new project directory"
+"Exit!"
 )
 
 # call function with arguments: 
@@ -88,7 +89,7 @@ selections=(
 choose_from_menu "\033[38;2;255;143;252m\033[1mWhat would you like to code?\033[0m" selected_choice "${selections[@]}"
 
 case $selected_choice in
-    # "Exit!") echo "\033[38;2;255;143;252m\033[1m Exiting!"; return;;
+    "Exit!") echo "\033[38;2;255;143;252m\033[1m Exiting!"; return;;
     "Start new Python project") echo "\033[38;2;255;143;252m\033[1mWhat would you like to name it?\033[0m"
         read "name?"
         case "$name" in 
@@ -117,7 +118,8 @@ case $selected_choice in
         * ) cd ~/Documents/Projects;
             mkdir $name
             cd $name
-            echo "\033[38;2;255;143;252m\033[1m \nCreated $name project!\033[0m \033[38;2;255;143;252m";
+            echo "\033[38;2;255;143;252m\033[1m \nCreated $name project!\033[0m \033[38;2;255;143;252m\n";
+            . "$script_dir/gitsetup.sh";
             code .
         esac
     ;;

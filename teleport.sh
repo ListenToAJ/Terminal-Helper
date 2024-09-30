@@ -94,12 +94,12 @@ choose_from_menu "\033[38;2;255;143;252m\033[1mWhere would you like to go?\033[0
 
 case $selected_choice in
     "Exit!") echo "\033[38;2;255;143;252m\033[1m Exiting!"; return;;
-    "Teleport to Projects") echo "\033[38;2;255;143;252m\033[1mTeleporting to Projects directory!"; cd ~/Documents/Projects;;
-    "Teleport to Python") echo "\033[38;2;255;143;252m\033[1mTeleporting to Python directory!"; cd ~/Documents/Projects/Python ;;
-    "Teleport to Algorithims") echo "\033[38;2;255;143;252m\033[1mTeleporting to Algorithims directory!"; cd ~/Documents/Projects/Algorithims ;;
-    "Teleport to Class Files") echo "\033[38;2;255;143;252m\033[1mTeleporting to your Class Files directory!"; cd ~/Documents/Projects/Temp\ Class\ Files ;;
-    "Teleport to Downloads") echo "\033[38;2;255;143;252m\033[1mTeleporting to your Downloads directory!"; cd ~/Downloads ;;
-    "Teleport to Desktop") echo "\033[38;2;255;143;252m\033[1mTeleporting to Desktop directory!"; cd ~/Desktop ;;
+    "Teleport to Projects") echo "\033[38;2;255;143;252m\033[1mTeleporting to Projects directory! \033[0m\n"; cd ~/Documents/Projects; ls -l;;
+    "Teleport to Python") echo "\033[38;2;255;143;252m\033[1mTeleporting to Python directory! \033[0m\n"; cd ~/Documents/Projects/Python; ls -l ;;
+    "Teleport to Algorithims") echo "\033[38;2;255;143;252m\033[1mTeleporting to Algorithims directory! \033[0m\n"; cd ~/Documents/Projects/Algorithims; ls -l ;;
+    "Teleport to Class Files") echo "\033[38;2;255;143;252m\033[1mTeleporting to your Class Files directory! \033[0m\n"; cd ~/Documents/Projects/Temp\ Class\ Files; ls -l ;;
+    "Teleport to Downloads") echo "\033[38;2;255;143;252m\033[1mTeleporting to your Downloads directory! \033[0m\n"; cd ~/Downloads; ls -l ;;
+    "Teleport to Desktop") echo "\033[38;2;255;143;252m\033[1mTeleporting to Desktop directory! \033[0m\n"; cd ~/Desktop; ls -l ;;
 esac
 
 # echo "\033[38;2;255;143;252m\033[1mSelected choice: $selected_choice"
